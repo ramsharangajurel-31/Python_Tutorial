@@ -1,13 +1,4 @@
-  # Virtual environment
 .venv/
-
-# Python cache
 __pycache__/
-*.pyc
-
-# PyCharm settings
 .idea/
-
-# OS files
-.DS_Store
-Thumbs.db
+*.pyc
