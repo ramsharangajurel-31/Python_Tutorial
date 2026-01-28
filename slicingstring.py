@@ -13,3 +13,19 @@ print(str1[2:5])
 # default step :1
 # ending index = exclusive
 # starting index = inclusive
+
+print("----------------------------------------------")
+
+
+# slicing with negative indices
+str2 = "RamSharan"
+print(str2[-6:-1])
+print(str2[:])
+
+
+print("================================================")
+# slicing with step
+str3 = "RamSharan"
+print(str3[::2])
+print(str3[1::2])
+print(str3[::-1])
