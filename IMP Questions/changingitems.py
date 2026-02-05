@@ -44,3 +44,27 @@ print(my_list)
 my_list=[10,20,30,40,50]
 del my_list[1:3]
 print(my_list)
+
+# clearing a list---------------------------------
+my_list=[10,20,30,40,50]
+# clearing a list
+my_list.clear()
+print(my_list)
+
+# looping --------------------------------------
+# using a for loop
+my_list=[10,20,30,40,50]
+for item in my_list:
+    print(item)
+
+    # using a for loop with enumerate()
+my_list=[10,20,30,40,50]
+for index,item in enumerate(my_list):
+    print(f"Index:{index}, Item:{item}")
+
+# using a while loop
+my_list=[10,20,30,40,50]
+i=0
+while i<len(my_list):
+    print(my_list[i])
+    i=i+1
