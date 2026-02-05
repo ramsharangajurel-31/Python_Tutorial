@@ -78,5 +78,27 @@ reversed_hello=s[4::-1]
 print(reversed_hello)
 
 
+# slicing
+print("----------------------------------------------------------------------------")
+my_list=[1,2,3,4,5]
+print(my_list)
+# print ("slicing from index 2 to 5")
+print(my_list[2:5])
+# print ("slicing from the begining to index 4 (4 i not included)")
+print(my_list[:4])
+# print("slicing from the index 3 to the end")
+print(my_list[3:])
+# print("slicing the entire list")
+print(my_list[:])
+# print("slicing with a step of 2")
+print(my_list[::2])
+# print("slicing from index 1 to 6 with a step of 2")
+print(my_list[1:7:2])
+# print("reversing the list using slicing")
+print(my_list[::-1])
+# print("slicing from the end with  A STEP OF -2 ")
+print(my_list[8:2:-2])
 
+
+# syntax [start:stop:step]
 
