@@ -1,4 +1,6 @@
 # changing items -------------------------------
+import copy
+
 my_list=[10,20,30,40,50]
 # changing the second item
 my_list[1]
@@ -68,3 +70,35 @@ i=0
 while i<len(my_list):
     print(my_list[i])
     i=i+1
+
+# copying (shallow copy/deep copy)-------------------------------------------
+# using copy() method
+original_list=[10,20,30,40,50]
+copy_list=original_list.copy()
+print(copy_list)
+
+# copying using slicing
+original_list=[10,20,30,40,50]
+copy_list=original_list[:]
+print(copy_list)
+# using list() constructor
+original_list=[10,20,30,40,50]
+copied_list=list(original_list)
+print(copied_list)
+
+
+# using copy modules copy() function
+original_list=[1,2,3,4,5]
+copied_list=copy.copy(original_list)
+print(copied_list)
+
+# using copy modules deepcopy() function
+original_list=[1,2,3,4,5]
+copied_list=copy.deepcopy(original_list)
+print(copied_list)
+
+
+# modify the copied list won't afect the original list
+copied_list[2][0]=99
+print(copied_list)
+print(original_list)
