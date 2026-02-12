@@ -21,3 +21,10 @@ joined_tuple =()
 for t in tuples_list:
     joined_tuple +=t
 print(joined_tuple)
+#  efficient way to join tuples
+tuples_list =[(1,2),(3,4),(5,6)]
+temp_list = []
+for t in tuples_list:
+    temp_list.extend(t)
+joined_tuple = tuple(temp_list)
+print(joined_tuple)
