@@ -26,3 +26,21 @@ my_set = {1,2,3,4,5}
 # check if an element is in the set
 print (3 in my_set)
 print ( 6 in my_set)
+
+# bikashey chor
+# converting to a set
+my_set = {1,2,3,4,5}
+my_list = list(my_set)
+print(my_list[0])
+
+# using a built in functions
+my_set = {1,2,3,4,5}
+# get the number of elements
+print(len(my_set))
+# get the smallest element
+print(min(my_set))
+# get the largest element
+print(max(my_set))
+
+# get the sum of elements
+print(sum(my_set))
