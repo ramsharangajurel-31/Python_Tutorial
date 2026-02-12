@@ -44,3 +44,31 @@ print(max(my_set))
 
 # get the sum of elements
 print(sum(my_set))
+
+# adding item to a set -------------------------------------------------------------------
+# add() - to add single element
+# update- to add multiple element
+my_set = {1,2,3,4,5}
+# adding a single it    em
+my_set.add(6)
+print(my_set)
+
+# add aN item that already exist
+my_set.add(2)
+print(my_set)
+# Create a set
+my_set = {1, 2, 3}
+
+# Add multiple items
+my_set.update([4, 5, 6])
+print(my_set)  # Output: {1, 2, 3, 4, 5, 6}
+
+# Add items from another set
+another_set = {7, 8}
+my_set.update(another_set)
+print(my_set)  # Output: {1, 2, 3, 4, 5, 6, 7, 8}
+
+# Add items from a string (each character is added)
+my_set.update("abc")
+print(my_set)  # Output: {1, 2, 3, 4, 5, 6, 7, 8, 'a', 'b', 'c'}
+
