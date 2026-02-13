@@ -72,3 +72,57 @@ print(my_set)  # Output: {1, 2, 3, 4, 5, 6, 7, 8}
 my_set.update("abc")
 print(my_set)  # Output: {1, 2, 3, 4, 5, 6, 7, 8, 'a', 'b', 'c'}
 
+# removing items=========================================================================================
+# remove(element): Removes a specified element; raises KeyError if not found.
+# discard(element): Removes a specified element; does nothing if not found.
+# pop(): Removes and returns an arbitrary element; raises KeyError if the set is empty.
+# clear(): Removes all elements from the set.
+
+# creating and adding items
+my_set = {1, 2, 3}
+my_set.add(4)
+my_set.update([5, 6])
+print("After adding items:", my_set)
+
+
+# removing items
+my_set.remove(2)
+my_set.discard(3)
+popped_item = my_set.pop()
+print("Popped item:", popped_item)
+print("After removing items:", my_set)
+
+# clearing the set
+my_set.clear()
+print("after clearing the set:", my_set)
+
+# set operations ===================================important==================================================
+set1 = {1,2,3,4,5}
+set2= {4,5,6,7,8}
+# union of set 1 and set 2
+union_set=set1.union(set2)
+print(f"union set: {union_set}")
+
+# intersection of set 1 and set 2
+intersection_set=set1.intersection(set2)
+print(f"intersection set: {intersection_set}")
+
+# difference of set 1 and set 2
+difference_set=set1.difference(set2)
+print(f"difference: {difference_set}")
+
+# symmetric difference of set 1 and set 2
+symmetric_set=set1.symmetric_difference(set2)
+print(f"symmetric set: {symmetric_set}")
+
+# check if set 1 is a subset of set 2
+is_subset=set1.issubset(set2)
+print(f"is_subset: {is_subset}")
+
+# check if set 1 is a superset of set 2
+is_superset=set1.issuperset(set2)
+print(f"is_superset: {is_superset}")
+
+# check if set 1 and set 2 are disjoint
+is_disjoint=set1.isdisjoint(set2)
+print(f"is_disjoint: {is_disjoint}")
