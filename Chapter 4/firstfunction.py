@@ -1,3 +1,6 @@
+from dataclasses import field
+
+
 def greet(name):
     print("Hello, " + name + "!")
 
@@ -104,3 +107,18 @@ def describe_pet(pet_name, animal_type='Cat'):
     print(f"I have a {animal_type} named {pet_name}")
 describe_pet(pet_name="Mouse")
 describe_pet("Whiskers","Cat")
+
+
+# using ** args
+def make_pizza(size, *toppings):
+    print(f"Making a {size} inch  pizza with the following toppings:")
+    for topping in toppings:
+        print(f"- {topping}")
+make_pizza(12,'paperioni','mushrooms','green peppers', 'extra cheese')
+# variable length arguments using ** kwargs(keyword arguments)
+def build_profile(first_name, last_name,**user_info):
+    profile = {"first_name": first_name, "last_name": last_name}
+    profile.update(user_info)
+    return profile
+user_profile=build_profile("albert","enistein", location="Nairo", field="pysics")
+print(user_profile)
