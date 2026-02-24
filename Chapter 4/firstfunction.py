@@ -122,3 +122,53 @@ def build_profile(first_name, last_name,**user_info):
     return profile
 user_profile=build_profile("albert","enistein", location="Nairo", field="pysics")
 print(user_profile)
+
+# function that returns both area and the circumference of a circle for a given radius
+
+import math
+def circle_properties(radius):
+    area = math.pi*radius**2
+    circumference = 2*math.pi*radius
+    return area,circumference
+# example usauge
+r=5
+area, circumference = circle_properties(r)
+print("Area:", area, "Circumference:", circumference)
+
+
+# factorial
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+print(factorial(5))
+
+
+# recursive fibonacci function
+def fibonacci(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+print(fibonacci(6))
+
+#
+def fibonacci2(n):
+    if n <=1:
+        return n
+    else:
+        return fibonacci2(n - 1) + fibonacci2(n - 2)
+
+    # number of terms
+terms = int(input("How many terms? "))
+if terms <= 0:
+    print("Please enter a positive integer")
+else:
+    print("fibonacci series:")
+    for i in range(terms):
+        print(fibonacci(i), end=" ")
+
