@@ -164,11 +164,49 @@ def fibonacci2(n):
         return fibonacci2(n - 1) + fibonacci2(n - 2)
 
     # number of terms
-terms = int(input("How many terms? "))
-if terms <= 0:
-    print("Please enter a positive integer")
-else:
-    print("fibonacci series:")
-    for i in range(terms):
-        print(fibonacci(i), end=" ")
+# terms = int(input("How many terms? "))
+# if terms <= 0:
+#     print("Please enter a positive integer")
+# else:
+#     print("fibonacci series:")
+#     for i in range(terms):
+#         print(fibonacci(i), end=" ")
 
+# ======================================Important==============================================
+# lambda function
+add_ten = lambda x: x + 10
+print(add_ten(10))
+
+# lambda function with multiple arguments
+multiply = lambda x,y: x*y
+print(multiply(10,20))
+
+
+# use case of lambda function
+# ? in the map() function
+
+numbers = [1,2,3,4,5]
+squared = map(lambda x: x**2, numbers)
+print(list(squared))
+
+# in the filter function
+numbers = [1,2,3,4,5]
+even_numbers = filter(lambda x: x % 2 == 0, numbers)
+print(list(even_numbers))
+
+
+#  in the stored function
+points = [(1,2), (3,1), (5,-1), (2,3)]
+sorted_points = sorted(points, key=lambda x: x[1])
+print(sorted_points)
+
+
+# isinstance
+# example 1
+x=10
+print(isinstance(x, int))
+print(isinstance(x, float))
+
+# example 2
+y=3.14
+print(isinstance(y,(int, float)))
