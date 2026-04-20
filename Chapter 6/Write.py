@@ -1,0 +1,5 @@
+file = open('example.txt','w+')
+file.write("Hello World")
+file.seek(0)
+content= file.read()
+file.close()

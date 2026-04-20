@@ -1,0 +1,3 @@
+Python is powerful programming language.
+Python is widely used in data science.
+Python supports data science.
